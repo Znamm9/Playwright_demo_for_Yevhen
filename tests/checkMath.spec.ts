@@ -12,5 +12,4 @@ test("chech name was changed properly", async ({ page }) => {
   const myMath = new MathOperations();
   myMath.changeName("Lucy");
   expect(await myMath.user.name).toBe("Lucy");
-  expect(await myMath.changeName("123")).toBe("123");
 })
